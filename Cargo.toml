@@ -1,0 +1,22 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.0"
+anyhow = "1.0.75"
+argon2 = "0.5.2"
+bson = "2.7.0"
+chrono = { version = "0.4.31", features = ["serde"] }
+env_logger = "0.10.1"
+jsonwebtoken = "9.1.0"
+log = "0.4.20"
+log4rs = { version = "1.2.0", features = ["rolling_file_appender", "json_encoder"] }
+serde = "1.0.193"
+serde_json = "1.0.108"
+thiserror = "1.0.50"
+uuid = { version = "1.6.1", features = ["serde", "v4"] }
+validator = "0.16.1"
